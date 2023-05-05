@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<live-wallpaper xmlns:attr="com.sonymobile.themescreator.resource.live_wallpaper.attr" xmlns:editor="com.sonymobile.themescreator.editwallpaper.editor" attr:version="1" editor:next_index="1">
+    <image attr:index="0" attr:src="THEME_FILE::skins/livewallpaper/res/drawable-laf1-xxhdpi/live_wallpaper.png" attr:x="0.00000000dp" editor:expanded="false" editor:name="Background"/>
+</live-wallpaper>

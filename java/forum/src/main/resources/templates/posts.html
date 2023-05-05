@@ -1,0 +1,246 @@
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>post</title>
+
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- 引入首页css文件 -->
+  <link href="/forum/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/forum/index.html">论坛</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/forum/index.html">主页 </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/forum/complex.html">综合</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/forum/fun.html">搞笑</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/forum/digital.html">数码</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/forum/teach.html">学业</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/forum/pet.html">宠物</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/forum/days.html">树洞</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/forum/anime.html">动漫</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/forum/game.html">游戏</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/forum/video.html">影视</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/forum/ss.html">站务</a>
+          </li>
+
+        </ul>
+
+        <ul class="nologin navbar-nav my-2 mr-lg-0">
+          <li>
+            <a class="nav-link" href="/forum/register.html">注册</a>
+          </li>
+          <li>
+            <a class="nav-link" href="/forum/login.html">登录</a>
+          </li>
+        </ul>
+
+        <ul class="logined navbar-nav my-2 ml-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              我的
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/forum/profile.html">个人中心</a>
+              <a class="dropdown-item" href="/forum/messger.html">消息通知</a>
+              <a class="dropdown-item" href="/forum/setting.html">个性设定</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item exit" href="#">退出账号</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-md-10 col-sm-12 mt-3">
+        <div class="card ">
+          <div class="card-body">
+            <div class="posts">
+              <script type="text/template" id="tpl_posts">
+                                            <div class="posts row mb-3 mt-3">
+                                                    <div class="col-2">
+                                                        <img src="/forum/images/avater.jpg" class="img-thumbnail">
+                                                    </div>
+                                                    <div class="col-10 row align-items-center">
+                                                        <div class="posttitle cardtitle stretched-link col-12 font-weight-bold text-reset"><h2>$posttitle$</h2></div>
+                                                        <div class="posttext stretched-link col-12 text-reset">$posttext$</div>
+                                                        <div class="postuser  font-weight-light col-4" style="font-size: 14px">$postuser$</div>
+                                                        <div class="lasttime font-weight-light col-5" style="font-size: 14px">$lasttime$</div>
+                                                        <div class="postremarks font-weight-light col-3" style="font-size: 14px">$postremarks$</div>
+                                                    </div>
+                                            </div>
+                                    </script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-10 col-md-10 col-sm-12 mt-3">
+        <div class="card ">
+          <div class="card-body">
+
+            <div class="remarks">
+              <script type="text/template" id="tpl_remarks">
+                                            <div class="posts row mb-3 mt-3">
+                                                    <div class="col-2">
+                                                        <img src="/forum/images/avater.jpg" class="img-thumbnail">
+                                                    </div>
+                                                    <div class="col-10 row align-items-center">
+                                                        <div class="remarkstext stretched-link col-12 text-reset">$remarkstext$</div>
+                                                        <div class="remarksuser  font-weight-light col-4" style="font-size: 14px">$remarksuser$</div>
+                                                        <div class="remarkstime font-weight-light col-5" style="font-size: 14px">$remarkstime$</div>
+                                                    </div>
+                                            </div>
+                                    </script>
+            </div>
+
+            <div class="mt-3">
+
+              <form class="remarksform" autocomplete="off">
+                <input type="text" class="form-control posthide" id="remarkspostid" placeholder="" name="remarkspostid"
+                  value="">
+                <input type="text" class="form-control posthide" id="remarksuser" placeholder="" name="remarksuser"
+                  value="">
+
+                <div class="form-group">
+                  <textarea class="form-control" id="remarkstext" rows="6" name="remarkstext"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary btn-remarks col-12">回复</button>
+              </form>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="/forum/js/jquery-3.4.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- 导入自定义js -->
+  <script src="/forum/js/main.js"></script>
+
+  <script type="text/javascript">
+    checkCookie();
+    document.getElementById("remarkspostid").value = getPostid();
+    document.getElementById("remarksuser").value = getCookie("username");
+
+    $(function () {
+      var url = 'http://localhost:8080/forum/data/post/' + getPostid()
+      $.get(url, function (data) {
+        var template = '';
+        template = $('.posts script').html();
+        var newtpl = '';
+        var tpl = '';
+        $.each(data.data, function (index, val) {
+          tpl = template.replace(/\$posttitle\$/g, val.posttitle).replace(/\$posttext\$/g, val.posttext).replace(/\$postuser\$/g, val.postuser).replace(/\$lasttime\$/g, val.lasttime).replace(/\$postremarks\$/g, val.postremarks);
+          newtpl = newtpl + tpl;
+        });
+        $('.posts').html(newtpl);
+      });
+    });
+
+    $(function () {
+      var urlremark = 'http://localhost:8080/forum/data/remarks/' + getPostid()
+      $.get(urlremark, function (data) {
+        var template1 = '';
+        template = $('.remarks script').html();
+        var newtpl = '';
+        var tpl = '';
+        $.each(data.data, function (index, val) {
+          tpl = template.replace(/\$remarkstext\$/g, val.remarkstext).replace(/\$remarksuser\$/g, val.remarksuser).replace(/\$remarkstime\$/g, val.remarkstime);
+          newtpl = newtpl + tpl;
+        });
+        $('.remarks').html(newtpl);
+      });
+    });
+
+    $(".exit").click(function () {
+      setCookie('username', "", -1);
+      location.reload();
+    }
+    )
+
+    $(".btn-remarks").click(function () {
+      var user = getCookie("username");
+      if (user != "") {
+        var data = $(".remarksform")
+          .serialize();
+        $
+          .ajax({
+            type: 'post',
+            url: 'http://localhost:8080/forum/data/addremarks',
+            cache: false,
+            async: false,
+            data: data,
+            dataType: 'text',
+            success: function (data) {
+              if (data == 1) {
+                location
+                  .reload();
+              } else {
+                alert("回复失败");
+              }
+            },
+            error: function () {
+              alert("回复失败,请检查网络");
+            }
+          })
+      } else {
+        alert("请登录");
+      }
+
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,870 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>欧派首页</title>
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		}
+
+		.bg1 {
+			width: auto;
+			height: 36px;
+			background-color: #323232
+		}
+
+		.bg1>.hello {
+			width: 1200px;
+			height: 36px;
+			margin: auto
+		}
+
+		.hello p {
+			color: #FFFFFF;
+			font-size: 12px;
+			line-height: 36px;
+			float: right
+		}
+
+		.hello a {
+			color: #ffffff;
+			text-decoration: none;
+		}
+
+		.hello a:hover {
+			color: #FFFFFF;
+		}
+
+		.bg_nav {
+			width: auto;
+			height: 138px;
+			background-color: #ffffff
+		}
+
+		.top {
+			width: 1200px;
+			height: 138px;
+			margin: auto;
+		}
+
+		.logo {
+			float: left;
+		}
+
+		.top2 {
+			width: 1037px;
+			height: 78px;
+			float: left;
+		}
+
+		.title {
+			width: 600px;
+			height: 40px;
+			margin-left: 50px;
+			margin-top: 20px;
+			float: left;
+		}
+
+		.title wrap {
+			color: #d2b772;
+			font-size: 13px;
+		}
+
+		.top2 img {
+			float: right;
+			margin-top: 20px;
+			margin-right: 20px;
+		}
+
+		.nav {
+			width: 1037px;
+			height: 60px;
+			float: left
+		}
+
+		.nav>.list li {
+			float: left;
+		}
+
+		.nav>.list a {
+			display: block;
+			width: 148px;
+			height: 55px;
+			font-size: 18px;
+			color: #000000;
+			text-decoration: none;
+			text-align: center;
+			line-height: 60px;
+		}
+
+		.nav>.list a:hover {
+			border-bottom: solid;
+			border-color: #d2b772;
+		}
+
+		.nav2 {
+			margin-left: 500px;
+			position: absolute;
+			display: none;
+			z-index: 999;
+		}
+
+		.nav2>.list a {
+			display: block;
+			width: 195px;
+			height: 45px;
+			background-color: #ffffff;
+			font-size: 14px;
+			color: #000000;
+			text-decoration: none;
+			text-align: left;
+			line-height: 45px;
+			border-bottom: solid 1px;
+			padding-left: 20px;
+		}
+
+		.nav2>.list a:hover {
+			border-bottom: solid;
+			border-color: #d2b772;
+		}
+
+
+		.banner {
+			width: auto;
+			height: 500px;
+			margin: auto;
+			position: relative;
+		}
+
+		.box {
+			width: 100%;
+			height: 500px;
+			margin: auto;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			overflow: hidden;
+		}
+
+		.picbox {
+			height: 500px;
+			position: absolute;
+			left: 0px;
+			overflow: hidden;
+		}
+
+		.pic {
+			float: left;
+		}
+
+		.pic img {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.line1 {
+			width: auto;
+			height: 5px;
+			background-color: #d2b772
+		}
+
+		.bg4 {
+			width: auto;
+			height: 600px;
+			background-color: #FFFFFF;
+			background-image: url(images/work_bg.png);
+		}
+
+		.notice {
+			width: 1200px;
+			height: 85px;
+			margin: auto;
+		}
+
+		.notice p {
+			margin-left: 45px;
+			margin-top: 10px;
+			font-size: 14px;
+		}
+
+		.title1 {
+			width: 1200px;
+			height: 35px;
+			margin: auto;
+			border-bottom: solid #cca05f;
+		}
+
+		.title1 p {
+			font-size: 25px;
+			line-height: 25px;
+			margin-left: 10px;
+		}
+
+		.work {
+			width: 1200px;
+			height: 480px;
+			margin: auto;
+		}
+
+		.workdiv {
+			width: 270px;
+			height: 400px;
+			background-color: #f2f4ff;
+			margin: 30px 15px;
+			float: left;
+		}
+
+		.workimg {
+			margin: 7px;
+		}
+
+		.worktitle {
+			width: 220px;
+			height: 40px;
+			margin: 10px 25px;
+			border-bottom: solid #dce5f6;
+			font-size: 16px;
+		}
+
+		.worktext {
+			width: 220px;
+			height: 100px;
+			margin: 10px 25px;
+			font-size: 15px;
+			Line-height: 25px;
+		}
+
+		.workdiv a {
+			margin-left: 45px;
+		}
+
+		.bg5 {
+			width: auto;
+			height: 525px;
+			background-color: #f1f3ff
+		}
+
+		.show {
+			width: 1200px;
+			height: 525px;
+			margin: auto;
+		}
+
+		.title2 {
+			width: auto;
+			height: 45px;
+			margin-top: 20px;
+			;
+			border-bottom: solid #cca05f;
+			font-size: 25px;
+			line-height: 45px;
+			float: left;
+		}
+
+		.more {
+			float: right;
+			margin-top: 30px;
+			;
+			margin-right: 20px;
+		}
+
+		.more a {
+			color: #000000;
+			text-decoration: none;
+			font-size: 14px;
+			font-family: 微软雅黑
+		}
+
+		.showleft {
+			width: 900px;
+			height: 395px;
+			margin-top: 20px;
+			float: left;
+			clear: left;
+		}
+
+		.showleft1 {
+			width: 585px;
+			float: right;
+		}
+
+		.showtitle {
+			width: 500px;
+			height: 40px;
+			float: right;
+			background-color: #878993;
+			margin-right: 85px;
+			margin-top: 15px;
+		}
+
+		.showtitle p {
+			font-size: 15px;
+			color: #FFFFFF;
+			line-height: 40px;
+			padding-left: 30px;
+		}
+
+		.showtext {
+			width: 480px;
+			height: 180px;
+			float: right;
+			margin-right: 60px;
+			margin-top: 10px;
+		}
+
+		.showtext p {
+			text-indent: 2em;
+			line-height: 40px;
+			font-size: 15px;
+		}
+
+		.showleft1 img {
+			margin: 80px 40px;
+		}
+
+		.showright {
+			width: 285px;
+			height: 385px;
+			background-color: #ebeffd;
+			float: right;
+			margin-right: 10px;
+			margin-top: 35px;
+			padding-top: 35px;
+		}
+
+		.showright img {
+			margin: 7px 6px;
+			width: 75px;
+			height: 95px;
+		}
+
+		.info {
+			width: 1200px;
+			margin: auto;
+		}
+
+		.infodiv {
+			width: 1200px;
+			height: 280px;
+			float: left;
+			margin-top: 25px;
+		}
+
+		.infotext {
+			width: 775px;
+			height: 280px;
+			float: right;
+		}
+
+		.infotext p {
+			font-size: 16px;
+			line-height: 30px;
+			text-indent: 2em;
+		}
+
+		.safe {
+			width: 1200px;
+			margin: auto
+		}
+
+		.safediv {
+			width: 1200px;
+			height: 305px;
+			float: left;
+		}
+
+		.safetext {
+			width: 800px;
+			height: 305px;
+			border-bottom: solid #c5c8d5 1px;
+			padding-top: 30px;
+			float: left;
+		}
+
+		.safetext p {
+			font-size: 16px;
+			line-height: 30px;
+			text-indent: 2em;
+		}
+
+		.safediv img {
+			float: right;
+			margin-top: 30px;
+		}
+
+		.imgdiv {
+			width: 1200px;
+			margin: auto;
+		}
+
+		.hi {
+			width: 1200px;
+			height: 520px;
+			margin: auto;
+		}
+
+		.honer {
+			width: 600px;
+			height: 490px;
+			float: left;
+			margin-top: 40px;
+		}
+
+		.honer img {
+			margin-top: 10px;
+		}
+
+		.information {
+			width: 600px;
+			height: 490px;
+			float: left;
+			margin-top: 40px;
+		}
+
+		.informationdiv {
+			width: 570px;
+			height: 393px;
+			float: left;
+			margin-top: 10px;
+		}
+
+		.infimg {
+			width: 152px;
+			float: left;
+		}
+
+		.inftext {
+			width: 368px;
+			height: 343px;
+			float: right;
+			background-color: #f6f7ff;
+			padding: 25px;
+			font-size: 17px;
+			line-height:
+		}
+
+		.inftext1 {
+			font-size: 17px;
+			line-height: 30px;
+			text-indent: 2em;
+		}
+
+		.inftitle {
+			font-size: 17px;
+			line-height: 25px;
+			color: #c23e44;
+			margin-top: 5px;
+		}
+
+		.inftext wrap {
+			color: #c23e44;
+		}
+
+		.team {
+			width: 1200px;
+			height: 320px;
+			margin: auto;
+		}
+
+		.teamimg {
+			width: 1200px;
+			height: 175px;
+			float: left;
+			margin-top: 25px;
+			margin-left:
+		}
+
+		.teamimg img {
+			margin-left: 5px;
+		}
+
+		.news {
+			width: 1200px;
+			height: 290px;
+			margin: auto;
+		}
+
+		.newsline {
+			width: 1200px;
+			height: 65px;
+			border-bottom: solid #e6e6e6;
+		}
+
+		.title3 {
+			width: auto;
+			height: 45px;
+			margin-top: 20px;
+			border-bottom: solid #cca05f;
+			font-size: 25px;
+			line-height: 45px;
+			float: left;
+		}
+
+		.newsnav {
+			width: 600px;
+			height: 65px;
+			float: left;
+			margin-left: 115px;
+		}
+
+		.newsnav a {
+			float: left;
+			display: block;
+			width: 118px;
+			height: 65px;
+			margin-left: 10px;
+			background-color: #828283;
+			text-decoration: none;
+			color: white;
+			text-align: center;
+			line-height: 65px;
+		}
+
+		.newsnav a:hover {
+			background-color: #d37474;
+			border-bottom: solid #ba4737;
+		}
+
+		.newsdiv {
+			width: 1200px;
+			height: 225px;
+			overflow: hidden;
+		}
+
+		.newsbox {
+			width: 3600px;
+			height: 225px;
+			position: relative;
+			left: 0px;
+		}
+
+		.newsbox div {
+			width: 1200px;
+			height: 225px;
+			float: left;
+		}
+
+		.footer {
+			width: auto;
+			height: 185px;
+			background-color: #414141;
+		}
+
+		.footerdiv {
+			width: 1200px;
+			height: 185px;
+			margin: auto;
+		}
+
+		.connect {
+			width: 145px;
+			height: 455px;
+			background-color: white;
+			z-index: 999;
+			position: absolute;
+			right: 0px;
+			top: 150px;
+			background-color: #f8f8f8;
+		}
+
+		.close {
+			width: 145px;
+			height: 30px;
+			background-color: #464a4b;
+			border-bottom: solid 5px #e9b037;
+		}
+
+		.close p {
+			color: white;
+			line-height: 30px;
+			font-size: 25px;
+			margin-left: 5px;
+		}
+	</style>
+	<script src="js/jquery.js"></script>
+	<script>
+
+		$(document).ready(function () {
+			var m = $(window).width();
+			var n = m * 5;
+			var h = m * 500 / 1920;
+			var o = n * -1;
+			$(".picbox").css("width", n + "px")
+			$(".picbox,.box,.banner").css("height", h + "px")
+			$(".pic img").css("width", m + "px")
+
+			var timer = setInterval(next, 3000);
+			function next() {
+				i = parseInt($(".picbox").css("left"));
+				offset = i - m;
+				if (offset == o) offset = 0;
+				$(".picbox").animate({ left: offset + "px" }, 350);
+			}
+
+			var Y = $(".abc").offset().left - 15;
+			$(".abc,.nav2").mouseenter(function () {
+				$(".nav2").css("margin-left", Y + "px");
+				$(".nav2").css("display", "inherit");
+
+			})
+
+			$(".abc,.nav2").mouseleave(function () {
+				$(".nav2").css("display", "none")
+			})
+
+			$(".newsnav>a").mousedown(function () {
+				i = $(this).index();
+				offset = i * 1200 * -1;
+				if (i == 0) {
+					$(".nnav1,.nnav2,.nnav3").css("background-color", "#828283");
+					$(".nnav1").css("background-color", "#d37474");
+				}
+				if (i == 1) {
+					$(".nnav1,.nnav2,.nnav3").css("background-color", "#828283");
+					$(".nnav2").css("background-color", "#d37474");
+				}
+				if (i == 2) {
+					$(".nnav1,.nnav2,.nnav3").css("background-color", "#828283");
+					$(".nnav3").css("background-color", "#d37474");
+				}
+				$(".newsbox").animate({ left: offset + "px" }, 300);
+			})
+
+			window.onscroll = function top() {
+				y = parseInt($(document).scrollTop());
+				y = y + 150;
+				$(".connect").animate({ top: y + "px" }, 80);
+			}
+
+			$(".close").mousedown(function () {
+				$(".connect").css("display", "none");
+			})
+		});
+	</script>
+</head>
+
+<body>
+	<div class="connect">
+		<div class="close"><a href="javascript:">
+				<p>×</p>
+			</a></div>
+	</div>
+	<div class="bg1">
+		<div class="hello">
+			<p>欢迎您 访问欧派科技官网! <a href="">官方微博</a> | <a href="">官方微信</a></p>
+		</div>
+	</div>
+	<div class="bg_nav">
+		<div class="top">
+			<div class="logo"><img src="images/logo.jpg"></div>
+			<div class="top2">
+				<div class="title">
+					<p style="font-size: 22px">安全文化与技术传播中心</p>
+					<p style="font-size: 13px">我们的宗旨：<wrap>传播安全知识，传播安全技术，服务社会大众</wrap>
+					</p>
+				</div>
+				<img src="images/call.png">
+			</div>
+			<div class="nav">
+				<ul class="list">
+					<li><a href="index.html">首页</a></li>
+					<li class="abc"><a href="">业务内容</a></li>
+					<li><a href="">案例展示</a></li>
+					<li><a href="">公司介绍</a></li>
+					<li><a href="">资质荣誉</a></li>
+					<li><a href="">资讯中心</a></li>
+					<li><a href="">服务中心</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="bg_banner">
+		<div class="banner">
+			<div class="nav2">
+				<ul class="list">
+					<li><a href="">请进来-教育馆</a></li>
+					<li><a href="">走出去-宣传车</a></li>
+					<li><a href="">带回去-安全相关产品</a></li>
+					<li><a href="">伴你行-流量导入宝命网</a></li>
+				</ul>
+			</div>
+			<div class="box">
+				<div class="picbox">
+					<div class="pic"><img src="images/1a95e57b199ca29dc9245f6c90a077f6.jpg"></div>
+					<div class="pic"><img src="images/f02e1177eb88bbf4e3496f121cfa1b94.jpg"></div>
+					<div class="pic"><img src="images/26b3b3f402fcaf65b55983ce17defcca.jpg"></div>
+					<div class="pic"><img src="images/e34c567e6d84d49fd227c27930295833.jpg"></div>
+					<div class="pic"><img src="images/e3046a4af1e674d791904463381f2dd8.jpg"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="line1"></div>
+	<div class="bg4">
+		<div class="notice">
+			<p>通知公告： · 2015-09-16 办理重庆欧派消防地震车需要重新审核 · 2015-09-16 办理重庆欧派消防地震车需要重新审核</p>
+		</div>
+		<div class="title1">
+			<p>欧派主要业务</p>
+		</div>
+		<div class="work">
+			<div class="workdiv">
+				<img class="workimg" src="images/c7a98ef58194c638b15453422ad62384.jpg">
+				<div class="worktitle">请进来</div>
+				<div class="worktext">请进来--安全教育体验馆是一个 面对社会公众的安全知识宣传平 台，是实现安全教育工作请进来 的理想载体和工具... </div>
+				<a href=""><img src="images/businessIocn.png"></a>
+			</div>
+			<div class="workdiv">
+				<img class="workimg" src="images/28d2f8f336b12931fec9ea9a3b067f90.jpg">
+				<div class="worktitle">走出去</div>
+				<div class="worktext">走出去--安全宣传体验车是一个 知识集成度高、专业性和参与互 动性强、寓教于乐的移动安全宣 传平台... </div>
+				<a href=""><img src="images/businessIocn.png"></a>
+			</div>
+			<div class="workdiv">
+				<img class="workimg" src="images/fe9dcf79ad47bc5c3eea12377c2b3f51.jpg">
+				<div class="worktitle">带回去</div>
+				<div class="worktext">带回去--安全相关产品是公司自 主研发、生产、代理、销售的应 急救援装备、工具及器材，如大 型救援机器人... </div>
+				<a href=""><img src="images/businessIocn.png"></a>
+			</div>
+			<div class="workdiv">
+				<img class="workimg" src="images/d5cdf1ec9ff456868d2f0a7888fe4b77.jpg">
+				<div class="worktitle">伴你行</div>
+				<div class="worktext">伴你行--安全说和宝命网是公司 运行的安全服务平台，公众可以 通过关注“安全说”微信服务号 ，学习安全相关知识... </div>
+				<a href=""><img src="images/businessIocn.png"></a>
+			</div>
+		</div>
+	</div>
+	<div class="bg5">
+		<div class="show">
+			<div class="title2">案例展示</div>
+			<div class="more"><a href="">+MORE</a></div>
+			<div class="showleft">
+				<img src="images/f22152e2daa336b8fc53afae10c1b52e.jpg">
+				<div class="showleft1">
+					<div class="showtitle">
+						<p>已实施各类安全教育宣传项目六百多项！</p>
+					</div>
+					<div class="showtext">
+						<p>
+							公司十几年来策划承建各级各类安全教育体验馆、研发制造各类型安全教育宣传车数百项，让我们积累了数以千计的案例史料，多个安全教育体验馆被评为国家级示范工程、省级示范工程，多功能消防宣传车、地震科普体验车等安全宣传车都得到政府和消防部门的一致认可，对提高公众安全意识和技能起到了重要的推进作用。
+						</p>
+					</div>
+					<a href=""><img src="images/168541685.png"></a>
+				</div>
+			</div>
+			<div class="showright">
+				<a href="javascript:"><img class="img1" src="images/show_03.png"></a>
+				<a href="javascript:"><img class="img2" src="images/show_05.png"></a>
+				<a href="javascript:"><img class="img3" src="images/show_07.png"></a>
+				<a href="javascript:"><img class="img4" src="images/show_13.png"></a>
+				<a href="javascript:"><img class="img5" src="images/show_14.png"></a>
+				<a href="javascript:"><img class="img6" src="images/show_15.png"></a>
+				<a href="javascript:"><img class="img7" src="images/show_20.png"></a>
+				<a href="javascript:"><img class="img8" src="images/show_22.png"></a>
+				<a href="javascript:"><img class="img9" src="images/show_24.png"></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="info">
+		<div class="title2">公司简介</div>
+		<div class="more"><a href="">+MORE</a></div>
+		<div class="infodiv">
+			<img src="images/info_03.png">
+			<div class="infotext">
+				<p>重庆欧派信息科技有限责任公司成立于2002年，是一家利用计算机技术、通讯技术、多媒体信息处理技术和控制技术相结合，专业从事安全文化创意与技术传播、安全文化与技术产品研发、生产、销售和服务为一体的综合性高科技企业。
+				</p>
+				<p>
+					公司始终秉承着“开放的理念、创新的思维、科学的态度、求实的作风”的企业精神和“以人为本、诚信立业、开放合作、共同发展”的经营理念，在打造和谐社会的征程中，肩负着强烈的历史使命和社会责任，以敢为人先、与时俱进的时代精神和科学态度，传播安全文化和理念，传授安全技术与技能，开发安全产品和系统，倾力打造中国安全文化和技术传播与创新的第一品牌。
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="safe">
+		<div class="title2">欧派安全观</div>
+		<div class="safediv">
+			<div class="safetext">
+				<p>
+					安全是现代人类社会的共同需求，安全与灾害事故是矛盾的对立双方，势均力敌，既对立统一，又相互排斥，永远都处于此消彼长，如影随形的不断斗争中。如果说水龙是福泽大众的安全之神的化身，那么它一定是安全文化与意识、法律与制度、技术与装备措施作为其神圣法宝，才能战胜火龙这漠视生命、违法违章、充满传统陋习，给人们带来事故灾难的恶魔。安全隐患无小事，麻痹愚昧是大敌，建立安全意识，从大事着想；消除安全隐患，从小事着手。立即行动起来，从我做起，检查和排除身边的一切不安全隐患，制止身边的一切不安全行为，克服自身一切不安全不文明的传统陋习。
+				</p>
+				<p>安全警钟长鸣，安全意识永驻，社会和谐安定，人民幸福平安。</p>
+				<p>安全梦——欧派梦——中国梦</p>
+				安全口号：传播安全文化，传授安全技术，造福社会大众
+			</div>
+			<img src="images/safe_03.png">
+		</div>
+	</div>
+
+	<div class="imgdiv">
+		<img src="images/img_03.png">
+	</div>
+
+	<div class="hi">
+		<div class="honer">
+			<div class="title2">资质荣誉</div>
+			<img src="images/honer_03.png">
+		</div>
+		<div class="information">
+			<div class="title2">安全服务介绍</div>
+			<div class="informationdiv">
+				<div class="infimg">
+					<a href="javascript:"><img src="images/infimg_03.png"></a>
+					<a href="javascript:"><img src="images/infimg_05.png"></a>
+					<a href="javascript:"><img src="images/infimg_06.png"></a>
+				</div>
+				<div class="inftext">
+					<p class="inftitle">安全宣传车现场体验</p>
+					<p class="inftitle">有效避免80%的伤害</p>
+					<p class="inftext1">请进来--教育馆是专为宣传防火防灾产生进来教育馆是专为宣传防火防灾所产生的一种教育馆请进来--教育馆是专为宣传防火防灾产生的请进来教育馆是专为宣传防火防灾所产生的一种教育馆请进来
+					</p>
+					教育馆是专为宣传防火防灾产生
+					<p class="inftext1">进来教育馆是专为宣传防火防灾所产生的教育馆请进来--教育馆是专为宣传防火防灾产生的请进来教育馆是<wrap>专为宣传防火防灾</wrap>所产生的一种教育馆。。。</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="team">
+		<div class="title2">团队风采</div>
+		<div class="teamimg">
+			<img src="images/team1.png">
+			<img src="images/team2.png">
+			<img src="images/team3.png">
+			<img src="images/team4.png">
+			<img src="images/team5.png">
+		</div>
+	</div>
+	<div class="news">
+		<div class="newsline">
+			<div class="title3">资讯中心</div>
+			<div class="newsnav">
+				<a class="nnav1" style="background-color:#d37474" href="javascript:">公司新闻</a>
+				<a class="nnav2" href="javascript:">行业新闻</a>
+				<a class="nnav3" href="javascript:">事故新闻</a>
+			</div>
+		</div>
+		<div class="newsdiv">
+			<div class="newsbox">
+				<div>公司新闻</div>
+				<div>行业新闻</div>
+				<div>事故新闻</div>
+			</div>
+		</div>
+	</div>
+	<div class="line1"></div>
+	<div class="footer">
+		<div class="footerdiv">
+			<img src="images/footer_27.png">
+		</div>
+	</div>
+</body>
+
+</html>

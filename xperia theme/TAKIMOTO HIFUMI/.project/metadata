@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<properties version="1">
+    <projectProperties>
+        <versionCode value="36"/>
+        <package value="com.newgametheme.takimotohifumi"/>
+        <name value="TAKIMOTO HIFUMI"/>
+        <versionName value="1.0.0"/>
+        <sdkLevel min="19" target="23"/>
+    </projectProperties>
+</properties>

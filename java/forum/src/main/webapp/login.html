@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang=zh-cn>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>登录</title>
+
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- 引入首页css文件 -->
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">论坛</a>
+
+      <ul class="nologin navbar-nav my-2 mr-lg-0">
+        <li>
+          <a class="nav-link" href="register.html">注册</a>
+        </li>
+      </ul>
+
+    </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-lg-5">
+        <div class="card mt-3">
+          <div class="card-body">
+            <h5 class="card-title">登录</h5>
+            <form class="mt-3 " autocomplete="off">
+              <div class="form-group">
+                <label for="InputUsername">用户名</label>
+                <input type="username" class="form-control" name="username" id="username" placeholder="请输入用户名">
+              </div>
+              <div class="form-group">
+                <label for="InputPassword1">密码</label>
+                <input type="password" class="form-control" name="password" id="password1" placeholder="请输入密码">
+              </div>
+              <div class="form-group form-check posthide">
+                <input type="checkbox" class="form-check-input" id="Check1">
+                <label class="form-check-label" for="Check1">记住我</label>
+              </div>
+              <button type="button" class="btn btn-primary btn-login col-12">登录</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <nav class="navbar fixed-bottom navbar-light bg-light mt-5">
+      <div class="container">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link">xxxx Powered by XXX <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="admin.html">管理员后台</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </nav>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- 导入自定义js -->
+  <script src="js/main.js"></script>
+  <!--异步登录-->
+  <script>
+    $(".btn-login").click(function () {
+
+      var data = $('form').serialize();
+      $.ajax({
+        type: 'post',
+        url: 'http://localhost:8080/forum/data/login',
+        cache: false,
+        async: false,
+        data: data,
+        dataType: 'text',
+        success: function (data) {
+          if (data == 1) {
+            setCookie("username", $("#username").val(), 30);
+            location.href = "index.html";
+          }
+          else {
+            alert("登录失败，请检查用户名与密码");
+          }
+        },
+        error: function () {
+          alert("登录失败，请检查网络连接");
+        }
+      })
+
+    })
+  </script>
+
+</body>
+
+</html>

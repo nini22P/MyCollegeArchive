@@ -1,0 +1,17 @@
+.logined {
+	display: none;
+}
+
+.posthide {
+	display: none;
+}
+
+.seach {
+	display: none;
+}
+
+.posttext img,
+.remarkstext img {
+	width: 80%;
+	margin: auto;
+}

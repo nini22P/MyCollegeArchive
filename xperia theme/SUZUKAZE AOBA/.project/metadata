@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<properties version="1">
+    <projectProperties>
+        <versionCode value="2"/>
+        <package value="com.newgametheme.suzukazeaoba"/>
+        <name value="SUZUKAZE AOBA"/>
+        <versionName value="1.0.0"/>
+    </projectProperties>
+</properties>

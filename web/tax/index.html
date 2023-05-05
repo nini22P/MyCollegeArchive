@@ -1,0 +1,128 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>重庆保税港</title>
+	<style>
+		* {
+			padding: opx;
+			margin: 0px;
+		}
+
+		.button a {
+			text-decoration: none;
+		}
+
+		.top {
+			height: 85px;
+			width: 100%;
+			background-image: url(images/topbg.png);
+		}
+
+		.top div.logo {
+			float: left;
+		}
+
+		.top div.button {
+			float: right;
+			width: 200px;
+			height: 28px;
+			padding-top: 15px;
+			margin-right: 5px;
+		}
+
+		.user {
+			float: left;
+			display: block;
+			width: 114px;
+			height: 28px;
+			background-image: url(images/user.png);
+			margin-right: 10px;
+			text-align: center;
+			line-height: 28px;
+			color: #000000;
+			text-indent: 20px;
+			font-size: 14px;
+		}
+
+		.logout {
+			float: left;
+			display: block;
+			width: 69px;
+			height: 28px;
+			background-image: url(images/logout.png);
+			text-align: center;
+			line-height: 28px;
+			color: #000000;
+			text-indent: 25px;
+			font-size: 14px;
+		}
+
+		.nav {
+			position: absolute;
+			top: 85px;
+			bottom: 0px;
+			width: 220px;
+			padding: 2px;
+		}
+
+		.section {
+			position: absolute;
+			top: 60px;
+			left: 220px;
+			right: 0px;
+			bottom: 0px;
+
+		}
+
+		.nav a {
+			text-decoration: none;
+			color: #333333;
+		}
+
+		.list {
+			padding-left: 10px;
+			border: #969696 solid 1px;
+			width: 206px;
+			height: 26px;
+		}
+
+		.list div {
+			margin-left: 10px;
+			display: none;
+		}
+	</style>
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".list a").click(function () {
+				$(this).next("div").slideToggle(200);
+			});
+
+		});
+	</script>
+</head>
+
+<div class="top">
+	<div class="logo"><img src="images/logo.png" /></div>
+	<div class="button"> <a href="#" class="user">管理员</a> <a href="#" class="logout">退出</a> </div>
+</div>
+<div class="nav">
+
+	<div class="list">
+		<a href="javascript:">管理模块名称</a>
+		<div class="list1">
+			<a href="javascript:">功能模块名称</a>
+			<div class="list2">
+				<a href="javascript:">子功能名称</a>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+<div class="section"></div>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加教师</title>
+    <link rel="stylesheet" href="script/layui/css/layui.css">
+    <style type="text/css">
+        .main {
+            width: 300px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .a1 {
+            width: 300px;
+            float: left;
+        }
+
+        .a2 {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=main>
+        <form action="addClass.jsp" method="get">
+            <div class="a1">
+                <label>姓名</label><br>
+                <input type="text" name="name" class="layui-input"><br>
+                <label>性别</label><br>
+                <input type="text" name="sex" class="layui-input"><br>
+                <label>专业</label><br>
+                <input type="text" name="professional" class="layui-input"><br>
+                <label>学院</label><br>
+                <input type="text" name="institute" class="layui-input"><br>
+                <div class="a2">
+                    <button type="submit" class="layui-btn">确认添加</button>
+                </div>
+            </div>
+    </div>
+
+</body>
+
+</html>

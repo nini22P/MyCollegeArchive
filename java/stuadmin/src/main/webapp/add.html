@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加学生</title>
+    <link rel="stylesheet" href="script/layui/css/layui.css">
+    <style type="text/css">
+        .main {
+            width: 300px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .a1 {
+            width: 300px;
+        }
+
+        .a3 {
+            float: right;
+        }
+
+        .error {
+            top: 10px;
+            color: red;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=main>
+        <form>
+            <div class="a1">
+                <label>学号</label><br>
+                <input type="text" name="id" id="id" class="layui-input"><br>
+                <label>姓名</label><br>
+                <input type="text" name="username" id="username" class="layui-input"><br>
+                <label>性别</label><br>
+                <select name="sex" id="sex" class="layui-select">
+                    <option value="">请选择</option>
+                    <option value="男">男</option>
+                    <option value="女">女</option>
+                </select>
+                <br><br>
+                <label>班级</label><br>
+                <input type="text" name="classs" id="classs" class="layui-input"><br>
+                <label>专业</label><br>
+                <input type="text" name="professional" id="professional" class="layui-input"><br>
+                <label>学院</label><br>
+                <input type="text" name="institute" id="institute" class="layui-input"><br>
+            </div>
+            <div class="a3">
+                <label id="error" class="error">添加失败，请检查输入信息</label>
+                <button type="button" lay-submit lay-filter="formDemo" id="addbutton" class="layui-btn">确认添加</button>
+            </div>
+        </form>
+    </div>
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            $('#addbutton').click(function () {
+                var id = $.trim($("#id").val());
+                var username = $.trim($("#username").val());//获取用户名  
+                var sex = $.trim($("#sex").val());
+                var classs = $.trim($("#classs").val());
+                var professional = $.trim($("#professional").val());
+                var institute = $.trim($("#institute").val());
+                var i = 1;
+                var url = 'add.jsp';
+                var param = { "id": id, "username": username, "sex": sex, "classs": classs, "professional": professional, "institute": institute };
+
+                $.post(url, param, function (data) {
+                    if (data == i) {
+                        window.location.href = "addend.html";
+                        //调用父窗口的function addPersonalCenter(){}方法，在父窗口右上角增加一个个人中心按钮  
+                        window.parent.addPersonalCenter();
+                        // 先获取窗口索引，才能关闭窗口  
+                        var index = parent.layer.getFrameIndex(window.name);
+                        parent.layer.close(index);
+                    } else {
+                        document.getElementById('error').style.visibility = 'visible';
+                    }
+                });
+            });
+        });
+
+
+        $(function () {
+            $("#addbutton").click(function () {
+
+            })
+        });
+    </script>
+</body>
+
+</html>

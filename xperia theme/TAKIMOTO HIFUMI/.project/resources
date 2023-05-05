@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<properties xmlns:meta="com.sonymobile.runtimeskinning.themecreator.project.meta" xmlns:serialized="com.sonymobile.runtimeskinning.themecreator.project.serialized" version="1">
+    <resourceValues>
+        <qualifier value="laf2-xxhdpi">
+            <resource id="@com.android.systemui:drawable/somc_navbar_home_btn">
+                <value meta:resourceType="fileImage" meta:resourceVersion="1" serialized:path="skins/com.android.systemui/res/drawable-laf2-xxhdpi/somc_navbar_home_btn.png"/>
+            </resource>
+            <resource id="@com.android.systemui:drawable/somc_navbar_home_btn_land">
+                <value meta:resourceType="fileImage" meta:resourceVersion="1" serialized:path="skins/com.android.systemui/res/drawable-laf2-xxhdpi/somc_navbar_home_btn_land.png"/>
+            </resource>
+            <resource id="@android:color/somc_color_accent_light">
+                <value meta:resourceType="color" meta:resourceVersion="1" serialized:color="#FFEB7092"/>
+            </resource>
+            <resource id="@android:color/somc_color_primary_light">
+                <value meta:resourceType="color" meta:resourceVersion="1" serialized:color="#FFEB7092"/>
+            </resource>
+            <resource id="@android:color/somc_color_component_ripple_light">
+                <value meta:resourceType="color" meta:resourceVersion="1" serialized:color="#1FEB7092"/>
+            </resource>
+            <resource id="@android:color/somc_color_accent_dark">
+                <value meta:resourceType="color" meta:resourceVersion="1" serialized:color="#FFEB7092"/>
+            </resource>
+            <resource id="@android:color/somc_color_primary_dark">
+                <value meta:resourceType="color" meta:resourceVersion="1" serialized:color="#FFEB7092"/>
+            </resource>
+            <resource id="@android:color/somc_color_component_ripple_dark">
+                <value meta:resourceType="color" meta:resourceVersion="1" serialized:color="#4DEB7092"/>
+            </resource>
+            <resource id="@android:color/somc_color_dark_primary_light">
+                <value meta:resourceType="color" meta:resourceVersion="1" serialized:color="#FFEB7092"/>
+            </resource>
+            <resource id="@android:color/somc_color_dark_primary_dark">
+                <value meta:resourceType="color" meta:resourceVersion="1" serialized:color="#FFEB7092"/>
+            </resource>
+            <resource id="@com.android.systemui:drawable/somc_status_bar_background_immersive">
+                <value meta:resourceType="color" meta:resourceVersion="1" serialized:color="#66EB7092"/>
+            </resource>
+            <resource id="@com.android.systemui:drawable/somc_status_bar_background_dark">
+                <value meta:resourceType="color" meta:resourceVersion="1" serialized:color="#FFEB7092"/>
+            </resource>
+            <resource id="@android:color/somc_color_textselection_handle_light">
+                <value meta:resourceType="color" meta:resourceVersion="1" serialized:color="#FFEB7092"/>
+            </resource>
+            <resource id="@android:color/somc_color_textselection_handle_dark">
+                <value meta:resourceType="color" meta:resourceVersion="1" serialized:color="#FFEB7092"/>
+            </resource>
+        </qualifier>
+        <qualifier value="laf1-xxhdpi">
+            <resource id="@skin:string/theme_name">
+                <value meta:resourceType="string" meta:resourceVersion="1" serialized:string="滝本ひふみ - Xperia theme"/>
+            </resource>
+            <resource id="@skin:drawable/theme_icon">
+                <value meta:resourceType="fileImage" meta:resourceVersion="1" serialized:path="skins/skin/res/drawable-laf1-xxhdpi/theme_icon.png"/>
+            </resource>
+            <resource id="@com.sonymobile.runtimeskinning.core:raw/alarm_sound_v2">
+                <value meta:resourceType="audio" meta:resourceVersion="1" serialized:path="Theme for HIFUMI TAKIMOTO.mp3"/>
+            </resource>
+            <resource id="@com.sonyericsson.home:drawable/home_apptray_dropzone">
+                <value meta:resourceType="fileImage" meta:resourceVersion="1" serialized:path="skins/com.sonyericsson.home/res/drawable-laf1-xxhdpi/home_apptray_dropzone.png"/>
+            </resource>
+            <resource id="@com.sonyericsson.home:color/apptray_drop_zone_text_color">
+                <value meta:resourceType="color" meta:resourceVersion="1" serialized:color="#FF010000"/>
+            </resource>
+            <resource id="@com.sonyericsson.home:color/apptray_drop_zone_text_shadow_color">
+                <value meta:resourceType="color" meta:resourceVersion="1" serialized:color="#00010101"/>
+            </resource>
+            <resource id="@com.sonyericsson.home:drawable/home_apptray_dropzone_home">
+                <value meta:resourceType="fileImage" meta:resourceVersion="1" serialized:path="skins/com.sonyericsson.home/res/drawable-laf1-xxhdpi/home_apptray_dropzone_home.png"/>
+            </resource>
+            <resource id="@com.sonyericsson.home:drawable/home_folder_folder_v2">
+                <value meta:resourceType="fileImage" meta:resourceVersion="1" serialized:path="skins/com.sonyericsson.home/res/drawable-laf1-xxhdpi/home_folder_folder_v2.png"/>
+            </resource>
+            <resource id="@com.sonyericsson.home:color/delete_dropzone_text_color">
+                <value meta:resourceType="color" meta:resourceVersion="1" serialized:color="#FF010000"/>
+            </resource>
+            <resource id="@com.sonyericsson.home:color/delete_dropzone_text_shadow_color">
+                <value meta:resourceType="color" meta:resourceVersion="1" serialized:color="#00020000"/>
+            </resource>
+            <resource id="@com.sonyericsson.home:drawable/home_desktop_remove_dropzone_top">
+                <value meta:resourceType="fileImage" meta:resourceVersion="1" serialized:path="skins/com.sonyericsson.home/res/drawable-laf1-xxhdpi/home_desktop_remove_dropzone_top.9.png"/>
+            </resource>
+            <resource id="@com.sonymobile.runtimeskinning.core:raw/notification_sound_v2">
+                <value meta:resourceType="audio" meta:resourceVersion="1" serialized:path="Messager.ogg"/>
+            </resource>
+            <resource id="@com.sonymobile.runtimeskinning.core:raw/ringtone_sound_v2">
+                <value meta:resourceType="audio" meta:resourceVersion="1" serialized:path="こころメッセージ（instrumental）.mp3"/>
+            </resource>
+            <resource id="@livewallpaper:drawable/live_wallpaper">
+                <value meta:resourceType="fileImage" meta:resourceVersion="1" serialized:path="skins/livewallpaper/res/drawable-laf1-xxhdpi/live_wallpaper.xml"/>
+            </resource>
+        </qualifier>
+        <qualifier value="laf3-xxhdpi">
+            <resource id="@com.sonyericsson.organizer:drawable/alarm_btn_dismiss">
+                <value meta:resourceType="fileImage" meta:resourceVersion="1" serialized:path="skins/com.sonyericsson.organizer/res/drawable-laf3-xxhdpi/alarm_btn_dismiss.png"/>
+            </resource>
+        </qualifier>
+    </resourceValues>
+</properties>

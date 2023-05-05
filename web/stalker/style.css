@@ -1,0 +1,74 @@
+a {
+  display: block;
+  text-decoration: none;
+  color: aliceblue;
+  background-color: #32b12f;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:hover {
+  color: #32b12f;
+  background-color: aliceblue;
+}
+
+#stalker {
+  pointer-events: none;
+  position: fixed;
+  top: -16px;
+  left: -16px;
+  width: 16px;
+  height: 16px;
+  border: solid 1px #000;
+  -webkit-transition: top, 0.5s, left 0.5s, width 0.5s, height 0.5s,
+    background-color 0.5s, -webkit-transform 0.2s;
+  transition: top, 0.5s, left 0.5s, width 0.5s, height 0.5s,
+    background-color 0.5s, -webkit-transform 0.2s;
+  transition: transform 0.2s, top, 0.5s, left 0.5s, width 0.5s, height 0.5s,
+    background-color 0.5s;
+  transition: transform 0.2s, top, 0.5s, left 0.5s, width 0.5s, height 0.5s,
+    background-color 0.5s, -webkit-transform 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  z-index: 999;
+}
+
+#stalker::before {
+  content: " ";
+  width: 100%;
+  font-size: 1.5rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  min-width: 10em;
+}
+
+#stalker.hov_ {
+  top: 0px;
+  left: 0px;
+  width: 64px;
+  height: 64px;
+  padding: 0px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  border: double 2px #32b12f;
+  -webkit-box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.6);
+}
+
+#stalker.hov_::before {
+  vertical-align: middle;
+  color: #32b12f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.4));
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.4));
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}

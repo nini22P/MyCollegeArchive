@@ -1,0 +1,630 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>深圳市十方度文化传播有限公司官方网站</title>
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		}
+
+		.top {
+			width: 100%;
+			height: 630px;
+			background-color: #ff1f1f;
+		}
+
+		.header {
+			height: 80px;
+			width: 100%;
+			background-color: #ff1f1f;
+			position: absolute;
+			z-index: 999;
+			left: 0px;
+			top: 100px;
+		}
+
+		.header>.wrap {
+			width: 1100px;
+			height: 80px;
+			margin: auto;
+		}
+
+		.logo {
+			width: 200px;
+			height: 50px;
+			position: absolute;
+			top: 15px;
+		}
+
+		.nav {
+			width: 600px;
+			height: 20px;
+			position: relative;
+			left: 600px;
+			top: 20px;
+		}
+
+		.list li {
+			float: left;
+			padding-top: 10px;
+		}
+
+		.list a {
+			display: block;
+			height: 20px;
+			font-size: 14px;
+			color: #FFFFFF;
+			text-decoration: none;
+			text-align: center;
+			line-height: 20px;
+			border-right: solid 1px;
+			padding-right: 25px;
+			padding-left: 25px;
+		}
+
+
+		.banner {
+			width: 100%;
+			height: 500px;
+			position: absolute;
+			top: 180px;
+		}
+
+		.banner>.wrap {
+			width: 1200px;
+			height: 500px;
+			margin: auto;
+			position: relative;
+		}
+
+		.box {
+			width: 1100px;
+			height: 450px;
+			margin: auto;
+			position: absolute;
+			left: 50px;
+			top: 0px;
+			overflow: hidden;
+		}
+
+		.picbox {
+			width: 4400px;
+			height: 450px;
+			position: absolute;
+			left: 0px;
+		}
+
+		.pic {
+			float: left;
+		}
+
+		.last {
+			width: 50px;
+			height: 450px;
+			position: relative;
+			left: 0px;
+			top: 0px;
+		}
+
+		.next {
+			width: 50px;
+			height: 450px;
+			position: absolute;
+			left: 1150px;
+			top: 0px;
+		}
+
+		.bannerNav {
+			width: 300px;
+			height: 46px;
+			margin: auto;
+			position: relative;
+			left: 0px;
+		}
+
+		.bannerNav a {
+			display: block;
+			width: 85px;
+			height: 46px;
+			float: left;
+			text-align: center;
+			line-height: 46px;
+			text-decoration: none;
+			color: #9f9f9f;
+			border-bottom: solid;
+		}
+
+		.bannerNav a:hover {
+			color: #ff1f1f;
+		}
+
+
+
+		.nextbox {
+			width: 100%;
+			height: 150px;
+			position: relative;
+			top: 50px;
+		}
+
+
+
+
+
+		.nextbox>.down {
+			width: 40px;
+			height: 24px;
+			background-color: red;
+			margin: 50px auto;
+		}
+
+
+		.about {
+			width: 1100px;
+			height: 80px;
+			border-top: solid;
+			margin-top: 40px;
+			margin: auto;
+			padding-top: 20px;
+			position: relative;
+		}
+
+		.aboutinfo {
+			width: 1040px;
+			height: auto;
+			margin: auto;
+			font-size: 12px;
+			line-height: 1.9;
+		}
+
+		.aboutinfo>a {
+			color: red;
+			font-size: 14px;
+			text-decoration: none;
+		}
+
+		.aboutmore {
+			font-size: 12px;
+			line-height: 1.9;
+			display: none;
+		}
+
+		.point {
+			width: 1100px;
+			height: 80px;
+			border-top: solid;
+			margin: 20px auto;
+			padding-top: 20px;
+			position: relative;
+		}
+
+		.pointinfo {
+			width: 1040px;
+			height: 500px;
+			margin: auto;
+			background-color: #f3f3f3;
+			padding: 30px;
+		}
+
+		.pointinfo>div {
+			width: 300px;
+			height: 200px;
+			float: left;
+			text-align: center;
+			font-size: 14px;
+			line-height: 1.9;
+			padding: 20px;
+		}
+
+		.work {
+			width: 1100px;
+			height: 80px;
+			border-top: solid;
+			margin: 30px auto;
+			padding-top: 20px;
+			position: relative;
+		}
+
+		.workinfo {
+			width: 1070px;
+			margin: auto;
+			background-color: #f3f3f3;
+			padding: 30px;
+		}
+
+		.workinfo a {
+			padding: 11px;
+		}
+
+		.workinfo img:hover {
+			transform: scale(1.02, 1.02);
+		}
+
+		.workinfo img {
+			transition: 0.25s;
+		}
+
+		.news {
+			width: 1100px;
+			height: 80px;
+			border-top: solid;
+			margin: 30px auto;
+			padding-top: 20px;
+			position: relative;
+		}
+
+		.newsinfo {
+			width: 1040px;
+			height: 510px;
+			margin: auto;
+			padding: 30px;
+			background-color: #f3f3f3;
+			position: relative;
+		}
+
+		.newsimg {
+			position: absolute;
+			left: 150px;
+		}
+
+		.newsboxs {
+			width: 400px;
+			height: 510px;
+			position: absolute;
+			left: 600px;
+			border-top: solid 1.5px #B2B2B2;
+		}
+
+		.newsbox {
+			width: 400px;
+			height: 460px;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.newslist {
+			width: 800px;
+			height: 460px;
+			position: absolute;
+		}
+
+		.newslist1 {
+			width: 400px;
+			height: 460px;
+			position: absolute;
+			padding: 30px;
+		}
+
+		.newslist2 {
+			width: 400px;
+			height: 460px;
+			position: absolute;
+			left: 400px;
+			padding: 30px;
+		}
+
+		.newslist1,
+		.newslist2>p {
+			color: #A7A7A7;
+		}
+
+		.newslist1>a {
+			text-decoration: none;
+			color: #3E3E3E;
+		}
+
+		.newslist1>a:hover {
+			text-decoration: underline;
+		}
+
+		.newsnav {
+			width: 400px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			border-top: solid 1.5px #B2B2B2;
+		}
+
+		.newsnav>a {
+			text-decoration: none;
+			font-size: 20px;
+			letter-spacing: 10px;
+			color: #3E3E3E;
+		}
+
+		.contact {
+			width: 1100px;
+			height: 80px;
+			border-top: solid;
+			margin: 20px auto;
+			padding-top: 20px;
+			position: relative;
+		}
+
+		.contactinfo {
+			width: 1040px;
+			margin: auto;
+			background-color: #f3f3f3;
+			padding: 30px;
+			text-align: center;
+			line-height: 2;
+		}
+
+		.footer {
+			width: 100%;
+			height: 60px;
+			margin: 20px auto;
+			background-color: #f3f3f3;
+			text-align: center;
+			line-height: 60px;
+		}
+
+		.poi {
+			position: absolute;
+			right: 20px;
+			top: 10px;
+			font-size: 30px;
+			color: red;
+			text-decoration: none;
+		}
+
+		.newsbg {
+			z-index: 1000;
+			width: 100%;
+			height: 800px;
+			left: 0px;
+			top: 0px;
+			background-color: #000000;
+			opacity: 0.5;
+			position: absolute;
+			display: none
+		}
+
+		.new {
+			z-index: 1001;
+			width: 75%;
+			height: 500px;
+			left: 10%;
+			top: 100px;
+			position: absolute;
+			background-color: #FFFFFF;
+			display: none;
+			padding: 50px;
+		}
+
+		.new a {
+			position: absolute;
+			right: 20px;
+			top: 10px;
+			text-decoration: none;
+			color: #000000;
+		}
+	</style>
+	<script src="js/jquery.js"></script>
+	<script>
+		var brand = "brand";
+		var pr = "pr";
+		var media = "media";
+		function news(openhtml) {
+			$(".newsbg").fadeToggle(300);
+			$(".new").fadeToggle(300);
+			if (openhtml == "brand" || openhtml == "pr" || openhtml == "media")
+				$(".newsmain").load(openhtml + ".jsp");
+			else $(".newsmain").load(openhtml + ".html");
+
+		}
+
+		setInterval(next, 4000);
+		function next() {
+			i = parseInt($(".picbox").css("left"));
+			offset = i - 1100;
+			if (offset == -3300) offset = 0;
+			$(".picbox").animate({ left: offset + "px" }, 300);
+		}
+
+		$(document).ready(function () {
+
+
+			window.onscroll = function top() {
+				y = parseInt($(document).scrollTop());
+				if (y > 100) $(".header").css("top", y + "px");
+				if (y < 100) $(".header").css("top", "100px");
+				j = y + 50;
+				$(".newsbg").css("top", y + "px");
+				$(".new").css("top", j + "px");
+			}
+
+
+
+			$(".bannerNav>a").mouseenter(function () {
+				i = $(this).index();
+				offset = i * 1100 * -1;
+				$(".picbox").animate({ left: offset + "px" }, 300);
+			})
+
+			$(".last>a").mousedown(function () {
+				i = parseInt($(".picbox").css("left"));
+				offset = i + 1100;
+				if (offset == 1100) offset = -2200;
+				$(".picbox").animate({ left: offset + "px" }, 300);
+			})
+
+			$(".next>a").mousedown(function () {
+				i = parseInt($(".picbox").css("left"));
+				offset = i - 1100;
+				if (offset == -3300) offset = 0;
+				$(".picbox").animate({ left: offset + "px" }, 300);
+			})
+
+			$(".newsnav>a").mouseenter(function () {
+				i = $(this).index();
+				offset = i * 400 * -1;
+				$(".newslist").animate({ left: offset + "px" }, 200);
+			})
+
+			$(".aboutinfo>a").mousedown(function () {
+				$(".aboutmore").slideToggle(200);
+			})
+
+			$(".poi").mousedown(function () {
+				$(this).parent().next().slideToggle(300);
+			})
+		});
+
+	</script>
+</head>
+
+<body>
+	<div class="top">
+
+		<div class="header">
+			<div class="wrap">
+				<div class="logo"><a href="index.html"><img src="images/logo.png" width="200" height="46"></a></div>
+				<div class="nav">
+					<ul class="list">
+						<li><a href="#about">ABOUT</a></li>
+						<li><a href="#point">POINT</a></li>
+						<li><a href="#work">WORK</a></li>
+						<li><a href="#news">NEWS</a></li>
+						<li><a href="#contact">CONTACT</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="banner">
+			<div class="wrap">
+
+				<div class="last"><a href="javascript:"><img src="images/last.png"></a></div>
+
+				<div class="box">
+					<div class="picbox">
+						<div class="pic"><img src="images/banner01.jpg"></div>
+						<div class="pic"><img src="images/banner02.jpg"></div>
+						<div class="pic"><img src="images/banner03.jpg"></div>
+						<div class="pic"><img src="images/banner01.jpg"></div>
+					</div>
+				</div>
+
+				<div class="next"><a href="javascript:"><img src="images/next.png"></a></div>
+
+				<div class="bannerNav">
+					<a href="javascript:">BRAND</a>
+					<a href="javascript:">PUBLIC</a>
+					<a href="javascript:">MEDIA</a>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+	<div class="nextbox">
+		<div class="down"><a href="#about"><img src="images/down.png"></a></div>
+	</div>
+
+	<div class="about" id="about">
+		<h2>ABOUT US/关于十方</h2>
+		<a href="javascript:" class="poi">︽</a>
+	</div>
+	<div class="aboutinfo">
+		十方品牌文化传播
+		，以开创性的无界创意思维，敏锐的洞察力，灵活驭变的资源整合能力，严谨的工作流程，强效的公关事件策动能力，立体的媒体传播渠道，丰富的跨界演绎资源，强大的硬件设施供应商联盟，专一的定制化服务，通过不断的探索与创新，贡献更贴切中国市场与客户需求的专业高端服务，为客户量身定制最适合的品牌整合传播方案。<br /><br />
+		<div class="aboutmore">十方品牌文化传播 （英文简称：Sephonel）：<br /><br />
+			是一家具有国际资源背景、新锐时尚的整合传播机构。发起于2009年，立足于深圳，面向海内外，以宣扬品牌文化为己任，立志成为高端生活方式类品牌服务商。长期以来，凭借新锐的创造力、严格的执行力和周到的服务体系，创下自己的品牌影响力。公司以品牌顾问、公关活动、媒体整合为主要战略方向，着力服务高端生活方式类品牌。服务领域涵盖服饰/珠宝、飞机/游艇、金融/投资、商业/地产、娱乐/电影、文化/艺术、会所/酒店、美容/健康等行业。<br /><br />
+			十方曾为众多知名品牌提供整合营销、公关活动、媒体传播等优质服务，与客户一起为市场留下了良好的口碑和深远的品牌价值。自2009年以来，凭借丰富的品牌服务经验，高端的品牌形象成功运作上百个高端生活方式类品牌项目，长期战略合作伙伴包括中国杯帆船赛、深圳广电集团、现代传播集团、南方都市报、周末画报、《财智生活》杂志、深圳市服装行业协会、玛丝菲尔、ODBO、KKMALL、ELLEMEN、EIN、GILLIVO、珂罗娜、摩卡奴、日贝迩、AQUEEN、D.A.BEAU、宝时捷表、美丽点击、YY欢聚时代、蝶讯网、MCM、玛榭俪、荣昌珠宝、华帝、观澜高尔夫、正中高尔夫、亚飞航空、阿斯顿马丁、一汽大众、深圳华侨城、北京友宝、高新投集团、万科集团、华润集团、海岸地产、卓越集团、绿景集团、鼎盛集团、星河集团、中影集团、信和集团、三诺集团、航海运动（中国）促进会、浪骑游艇会、辛普森游艇、懿德轩、莱蒙国际、康美药业、壹卡会等等。<br /><br /><br />
+		</div>
+		<a href="javascript:">•••••>更多↑</a><br /><br />
+		<img src="images/about-banner.jpg" />
+	</div>
+
+	<div class="point" id="point">
+		<h2>POINT/十方观点</h2>
+		<a href="javascript:" class="poi">︽</a>
+	</div>
+	<div class="pointinfo">
+		<img src="images/point-banner.jpg" />
+		<div>
+			“企业掌控对话的时代早已结束，消费者从被销售<br />
+			对象到营销中一份子，<br />
+			成为参与者、传播者及主动创造者。在这个“营<br />销
+			民主”时代，消费者<br />
+			参与不是形式，而是一种品牌及市场目标。”
+		</div>
+		<div>
+			我们惯于撇开教条式的固见框架和繁文冗节， 直击问题的命脉主穴：<br />
+			品牌的实质就是受众感知中的企业形象！
+		</div>
+		<div>
+			产品/服务 + 包装/视觉感知 + 营销宣传整合，即品牌壁垒<br />
+			的三位一体，在撑破围栏的超载市场下，围绕产品/服务 所展开的视觉形象系统&<br />
+			整合营销策略必须是当仁不让的救命稻草！
+		</div>
+	</div>
+
+	<div class="work" id="work">
+		<h2>WORK/案例</h2>
+		<a href="javascript:" class="poi">︽</a>
+	</div>
+	<div class="workinfo">
+		<a href="javascript:" onClick="news(brand);"><img src="images/20131226085655916.jpg" /></a>
+		<a href="javascript:" onClick="news(pr);"><img src="images/20131226085818346.jpg" /></a>
+		<a href="javascript:" onClick="news(media);"><img src="images/20131226085949533.jpg" /></a>
+	</div>
+	<div class="news" id="news">
+		<h2>NEWS/最新动态</h2>
+		<a href="javascript:" class="poi">︽</a>
+	</div>
+	<div class="newsinfo">
+		<div class="newsimg"><img src="images/news-banner.jpg" /></div>
+		<div class="newsboxs">
+			<div class="newsbox">
+				<div class="newslist">
+					<div class="newslist1">
+						<p>第一页</p><br />
+						<a href="javascript:" onClick="news(1);">1.大新闻</a>
+					</div>
+					<div class="newslist2">
+						<p>第二页</p>
+					</div>
+				</div>
+			</div>
+			<div class="newsnav">
+				<a href="javascript:">1</a>
+				<a href="javascript:">2</a>
+			</div>
+		</div>
+	</div>
+	<div class="contact" id="contact">
+		<h2>CONTACT/联系我们</h2>
+		<a href="javascript:" class="poi">︽</a>
+	</div>
+	<div class="contactinfo">
+		<p>深圳市十方度文化传播有限公司</p>
+		<p>Tel:0755-8621 7789</p>
+		<p>Fax:0755-2660 1026</p>
+		<p>E-mail:sephonel@126.com</p>
+		<p>Add:深圳市南山区华侨城创意文化园恩平街美林大厦202室</p>
+		<p>Room 201,Block E4,OCT-LOFT Nanshan,Shenzhen</p>
+		<p><a href="javascript:"><img src="images/contact-weibo.jpg" /></a></p>
+		<p><img src="images/contact-qrcode.jpg" /></p>
+		<p><img src="images/contact-map.jpg" /></p>
+	</div>
+	<div class="footer">
+		<p>powered by xxx copyright 2018</p>
+	</div>
+	<div class="newsbg"></div>
+	<div class="new">
+		<a href="javascript:" class="closenew" onClick="news();">关闭</a>
+		<div class="newsmain"></div>
+	</div>
+</body>
+
+</html>
